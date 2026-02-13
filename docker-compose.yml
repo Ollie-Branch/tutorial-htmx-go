@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: "htmx-backend"
+    ports:
+      - "9001:9001"
+    network_mode: "host"
+    environment:
+      - GIN_MODE=release

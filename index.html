@@ -12,7 +12,7 @@
                     <li>
                         <strong>
                             <button
-                                hx-get="/content-1.html"
+                                hx-get="/"
                                 hx-target="#content"
                                 hx-swap="innerHTML"
                                 hx-trigger="click"
@@ -24,7 +24,7 @@
                     <li>
                         <strong>
                             <button
-                                hx-get="/content-2.html"
+                                hx-get="/content-2"
                                 hx-target="#content"
                                 hx-swap="innerHTML"
                                 hx-trigger="click"
@@ -36,7 +36,7 @@
                     <li>
                         <strong>
                             <button
-                                hx-get="/content-3.html"
+                                hx-get="/content-3"
                                 hx-target="#content"
                                 hx-swap="innerHTML"
                                 hx-trigger="click"
@@ -49,6 +49,7 @@
             </nav>
         </header>
         <main id="content" class="width:100%">
+            {{.Content}}
         </main>
     </body>
 </html>
